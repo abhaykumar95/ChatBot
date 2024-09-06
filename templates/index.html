@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    </link>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navclass ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PDFReader</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Previous Year Papers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center mt-5 main-head">Welcome to <span><b style="color:rgb(92, 132, 178)">ChatDoc</b></span></h1>
+    <div class="d-flex flex-column justify-content-between align-items-center">
+    <div class="main-div ">
+        <h3>Intelligent Chatbot Assistance</h3>
+        <p class="point-para">Unlock the potential of your documents with PDFReader. Seamlessly integrate AI into your workflow to
+            revolutionize document handling. Our sophisticated chatbot feature allows you to upload documents or URLs,
+            ask questions, and receive swift, accurate responses. Experience the future of knowledge access today.</p>
+        
+        <h3>Exam Preparation Made Simple</h3>
+        <p class="point-para">Equip yourself for success with PDFReader's comprehensive exam preparation resources. Gain access to a vast
+            repository of study materials and documents , empowering you to study effectively and excel in your academic
+            endeavors.</p>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script>
+          window.botpressWebChat.init({
+              "composerPlaceholder": "Enter your query here",
+              "botConversationDescription": "This chatbot helps you in searchinng your pdf for small details conviently",
+              "botId": "80db8728-fb09-4ef0-bed8-b018e7d5b3ab",
+              "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+              "messagingUrl": "https://messaging.botpress.cloud",
+              "clientId": "80db8728-fb09-4ef0-bed8-b018e7d5b3ab",
+              "webhookId": "23574274-6800-47eb-aae5-67bfc2bd70f4",
+              "lazySocket": true,
+              "themeName": "prism",
+              "botName": "ChatDoc",
+              "frontendVersion": "v1",
+              "theme": "prism",
+              "themeColor": "#2563eb"
+          });
+        </script>
+</body>
+
+</html>

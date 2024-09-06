@@ -1,0 +1,29 @@
+.active{
+    margin:0 0.7em 0 0.7em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color:rgb(40, 39, 74);
+    font-style:Inter;
+}
+.navbar-brand{
+    font-size: 1.4em;
+    font-weight: 600;
+    font-style:Inter;
+}
+.navclass{
+    background-color: #7aa8ec6b;
+    padding: 01em 0 01em 0;
+}
+.main-head{
+    font-size: 3em;
+    font-style: Inter;
+}
+.main-div{
+    width:70vw;
+}
+.point-para{
+    text-align: justify;
+    font-size: 1.1em;
+    font-style: Inter;
+    margin-bottom: 2.5em;
+}
